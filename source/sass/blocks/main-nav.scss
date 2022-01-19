@@ -1,0 +1,6 @@
+.main-nav__list {
+  @media (min-width: $desktop-width) {
+     column-count: 2;
+     column-gap: 0;
+  }
+}

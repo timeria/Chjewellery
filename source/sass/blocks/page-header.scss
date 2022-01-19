@@ -1,0 +1,133 @@
+.page-header {
+  margin: 0 auto;
+  position: absolute;
+  top: 0;
+  z-index: 5;
+  max-width: 1460px;
+  padding: 0 25px;
+  width: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  justify-content: space-between;
+  display: flex;
+
+  @media (min-width: $desktop-width) {
+    padding-top: 35px;
+  }
+
+  @media (max-width: $tablet-width) {
+    padding-top: 20px;
+  }
+
+  @media (max-width: $mobile-width) {
+    padding: 17px 15px 0;
+  }
+}
+
+.page-header .logo__title {
+  color: $white;
+}
+
+.page-header__contacts {
+  @media (min-width: $desktop-width) {
+    width: calc(100% - 182px);
+    margin-left: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+  }
+
+  @media (max-width: $tablet-width) {
+    margin-top: 10px;
+  }
+
+  @media (max-width: $mobile-width) {
+    margin-top: 5px;
+  }
+}
+
+.page-header__links {
+  @media (min-width: $desktop-width) {
+    width: calc(100% - 254px);
+    text-align: right;
+  }
+}
+
+.page-header__contacts a {
+  color: $white;
+  display: inline-block;
+  vertical-align: middle;
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 10px;
+  }
+}
+
+.page-header__contacts span {
+  @media (min-width: $desktop-width) {
+    font-size: 16px;
+    line-height: 18px;
+    margin-left: 6px;
+  }
+
+  @media (max-width: $tablet-width) {
+    display: none;
+  }
+}
+
+.page-header__links a:hover {
+  opacity: 0.8;
+}
+
+.page-header__phone svg {
+  @media (max-width: $tablet-width) {
+    width: 24px;
+    height: 24px;
+  }
+}
+
+.page-header__mail svg {
+  @media (max-width: $tablet-width) {
+    width: 25px;
+    height: 19px;
+  }
+}
+
+.page-header__mail {
+  margin-right: 24px;
+
+  @media (max-width: $mobile-width) {
+    margin-right: 18px;
+  }
+}
+
+.page-header__contacts svg {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.page-header__phone {
+  @media (min-width: $desktop-width) {
+    margin: 0 0 0 54px;
+  }
+}
+
+.page-header__contacts .button {
+  padding: 14px 26px 13px;
+  margin-left: 54px;
+
+  @media (max-width: $tablet-width) {
+    display: none;
+  }
+}
+
+@media (max-width: $mobile-width) {
+  .page-header .logo__text {
+    display: none;
+  }
+
+  .page-header .logo__img {
+    width: 38px;
+    height: 38px;
+  }
+}

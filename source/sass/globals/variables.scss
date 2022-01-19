@@ -1,0 +1,26 @@
+// Colors
+
+$white: #ffffff;
+$black: #1b2d37;
+$title: #203c42;
+$text: #666666;
+$blue: #00b2ff;
+$input: rgba(255, 255, 255, 0.1);
+$grey: #788891;
+$border: #626962;
+$about: #ebebeb;
+$over: #000000;
+
+// Viewports
+
+$tabletbig-width: 1200px;
+$tablet-width: 1023px;
+$desktop-width: 1024px;
+$mobile-width: 767px;
+$tabletstart-width: 768px;
+
+@mixin beforeAfter {
+  content: "";
+  display: block;
+  position: absolute;
+}
